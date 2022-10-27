@@ -57,8 +57,12 @@ public class PenguWarmup {
 	}
 
 	public static int penguSum(int penguin) {
-		// TODO
-		return 0;
+		int cs = 0;
+		while (penguin > 0) {
+			cs = cs + penguin % 10;
+			penguin = (penguin - penguin % 10) / 10;
+		}
+ 		return cs;
 	}
 
 	public static long penguPermutation(long n, long k) {
@@ -75,7 +79,7 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		penguEvolution(9, 100);
+		penguSum(1337);
 	}
 
 }
