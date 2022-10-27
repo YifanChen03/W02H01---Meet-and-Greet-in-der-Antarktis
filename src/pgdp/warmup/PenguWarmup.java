@@ -30,6 +30,9 @@ public class PenguWarmup {
 		return 0;
 	}
 
+	/*	Die Inhalte der main()-Methode beeinflussen nicht die Bewertung dieser Aufgabe
+	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
+	 */
 	public static void main(String[] args) {
 
 		// Here is a place for you to play around :)
