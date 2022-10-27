@@ -7,7 +7,16 @@ public class PenguWarmup {
 	}
 
 	public static void penguInfoOut(int penguin) {
-		// TODO
+		if (penguin < 0) {
+			System.out.println("Penguin" + penguin + " is not a known penguin!");
+		} else {
+			System.out.println("Penguin: " + penguin);
+			if (penguin % 2 == 0) {
+				System.out.println("This penguin is a male.");
+			} else {
+				System.out.println("This penguin is a female.");
+			}
+		}
 	}
 
 	public static int penguEvolution(int penguin, int years) {
