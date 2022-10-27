@@ -47,7 +47,7 @@ public class PenguWarmup {
 						sevenyears_c = 1;
 					} else {
 						penguin = (penguin * 3) + 1;
-						sevenyears_f = false;
+						//sevenyears_f = false;
 					}
 				}
 			}
