@@ -46,7 +46,7 @@ public class PenguWarmup {
 						sevenyears = true;
 						sevenyears_c = 1;
 					} else {
-						penguin = (penguin * 3) + 1;
+						penguin = penguin * 3 + 1;
 						sevenyears_f = false;
 					}
 				}
@@ -75,7 +75,7 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		penguEvolution(9, 10);
+		penguEvolution(9, 100);
 	}
 
 }
