@@ -7,7 +7,7 @@ public class PenguWarmup {
 	}
 
 	public static void penguInfoOut(int penguin) {
-		if (penguin < 0) {
+		if (penguin <= 0) {
 			System.out.println("Penguin" + penguin + " is not a known penguin!");
 		} else {
 			System.out.println("Penguin: " + penguin);
