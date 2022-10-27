@@ -7,8 +7,8 @@ public class PenguWarmup {
 	}
 
 	public static void penguInfoOut(int penguin) {
-		if (penguin <= 0) {
-			System.out.println("Penguin" + penguin + " is not a known penguin!");
+		if (penguin < 0) {
+			System.out.println("Penguin " + penguin + " is not a known penguin!");
 		} else {
 			System.out.println("Penguin: " + penguin);
 			if (penguin % 2 == 0) {
@@ -46,8 +46,7 @@ public class PenguWarmup {
 
 		// Here is a place for you to play around :)
 
-		penguInfoOut(1);
-		System.out.println(penguEvolution(1337, 5));
+		penguInfoOut(2);
 	}
 
 }
