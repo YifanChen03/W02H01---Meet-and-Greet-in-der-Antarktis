@@ -20,8 +20,40 @@ public class PenguWarmup {
 	}
 
 	public static int penguEvolution(int penguin, int years) {
-		// TODO
-		return 0;
+		int final_n = 0;
+		boolean sevenyears = false;
+		int sevenyears_c = 0;
+		boolean sevenyears_f = false;
+		for (int r = 0; r < years; r++) {
+			if (sevenyears) {
+				sevenyears_c++;
+				if (sevenyears_c == 6) {
+					sevenyears = false;
+					sevenyears_f = true;
+				}
+			} else {
+				if (penguin % 2 == 0) {
+					for (int i = 2; i <= penguin; i = i * 2) {
+						if (i == penguin) {
+							penguin = 1;
+						}
+					}
+					if (penguin % 2 == 0) {
+						penguin = penguin / 2;
+					}
+				} else if (penguin % 2 != 0) {
+					if (penguin % 7 == 0 && !sevenyears_f) {
+						sevenyears = true;
+						sevenyears_c = 1;
+					} else {
+						penguin = (penguin * 3) + 1;
+						sevenyears_f = false;
+					}
+				}
+			}
+		}
+		final_n = penguin;
+		return final_n;
 	}
 
 	public static int penguSum(int penguin) {
@@ -43,10 +75,7 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-
-		// Here is a place for you to play around :)
-
-		penguInfoOut(2);
+		penguEvolution(9, 10);
 	}
 
 }
