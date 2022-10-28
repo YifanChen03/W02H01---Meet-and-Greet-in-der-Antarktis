@@ -66,8 +66,18 @@ public class PenguWarmup {
 	}
 
 	public static long penguPermutation(long n, long k) {
-		// TODO
-		return 0;
+		long result = 0;
+		for (long r = n - 1; r >= 1; r--) {
+			n = n * r;
+		}
+		for (long i = k - 1; i >= 1; i--) {
+			k = k * i;
+		}
+		result = n / k;
+		System.out.println(n);
+		//System.out.println(k);
+		//System.out.println(result);
+		return result;
 	}
 
 	public static long penguPowers(int x, int i) {
@@ -79,7 +89,6 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		penguSum(1337);
+		penguPermutation(22, 3);
 	}
-
 }
