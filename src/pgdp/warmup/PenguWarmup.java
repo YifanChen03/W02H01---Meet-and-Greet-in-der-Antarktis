@@ -88,6 +88,8 @@ public class PenguWarmup {
 		}
 		if (i == 0) {
 			result = 1;
+		} else if (i == 1){
+			result = x;
 		} else {
 			result = newX;
 		}
@@ -98,6 +100,6 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		System.out.println(penguPowers(5, 6));
+		System.out.println(penguPowers(2147, 1));
 	}
 }
