@@ -77,11 +77,11 @@ public class PenguWarmup {
 
 	public static long penguPowers(int x, int i) {
 		long result = 0;
-		int newX = 0;
-		int faktor = x;
-		for (int r = i; r > 1; r--) {
+		long newX = 0;
+		long faktor = x;
+		for (long r = i; r > 1; r--) {
 			newX = 0;
-			for (int r2 = faktor; r2 > 0; r2--) {
+			for (long r2 = faktor; r2 > 0; r2--) {
 				newX = newX + x;
 			}
 			faktor = newX;
@@ -95,6 +95,6 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		penguPowers(3, 4);
+		penguPowers(2, 40);
 	}
 }
