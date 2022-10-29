@@ -81,8 +81,8 @@ public class PenguWarmup {
 		long faktor = x;
 		for (long r = i; r > 1; r--) {
 			newX = 0;
-			for (long r2 = faktor; r2 > 0; r2--) {
-				newX = newX + x;
+			for (long r2 = x; r2 > 0; r2--) {
+				newX = newX + faktor;
 			}
 			faktor = newX;
 		}
