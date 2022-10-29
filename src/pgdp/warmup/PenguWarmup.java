@@ -88,8 +88,6 @@ public class PenguWarmup {
 		}
 		if (i == 0) {
 			result = 1;
-		} else if (i == 0 && x == 0){
-			result = 0;
 		} else {
 			result = newX;
 		}
