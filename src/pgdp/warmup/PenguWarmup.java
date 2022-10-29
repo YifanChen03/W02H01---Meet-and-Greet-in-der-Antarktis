@@ -94,6 +94,6 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		penguPowers(78, 10);
+		System.out.println(penguPowers(4, 8));
 	}
 }
