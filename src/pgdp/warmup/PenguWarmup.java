@@ -71,21 +71,30 @@ public class PenguWarmup {
 			n = n * r;
 		}
 		result = n / k;
-		//System.out.println(n);
-		//System.out.println(k);
 		System.out.println(result);
 		return result;
 	}
 
 	public static long penguPowers(int x, int i) {
-		// TODO
-		return 0;
+		long result = 0;
+		int newX = 0;
+		int faktor = x;
+		for (int r = i; r > 1; r--) {
+			newX = 0;
+			for (int r2 = faktor; r2 > 0; r2--) {
+				newX = newX + x;
+			}
+			faktor = newX;
+		}
+		result = newX;
+		System.out.println(result);
+		return result;
 	}
 
 	/*	Die Inhalte der main()-Methode beeinflussen nicht die Bewertung dieser Aufgabe
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		penguPermutation(21, 19);
+		penguPowers(3, 4);
 	}
 }
