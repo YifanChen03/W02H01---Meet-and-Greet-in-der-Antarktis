@@ -86,7 +86,11 @@ public class PenguWarmup {
 			}
 			faktor = newX;
 		}
-		result = newX;
+		if (x == 0 && i == 0) {
+			result = 1;
+		} else {
+			result = newX;
+		}
 		return result;
 	}
 
@@ -94,6 +98,6 @@ public class PenguWarmup {
 	 *	(es sei denn natürlich, sie verursachen Compiler-Fehler).
 	 */
 	public static void main(String[] args) {
-		System.out.println(penguPowers(4, 8));
+		System.out.println(penguPowers(0, 0));
 	}
 }
